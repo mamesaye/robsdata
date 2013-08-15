@@ -1,0 +1,49 @@
+<%= form_for(@appearance) do |f| %>
+  <% if @appearance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@appearance.errors.count, "error") %> prohibited this appearance from being saved:</h2>
+
+      <ul>
+      <% @appearance.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :show %><br />
+    <%= f.number_field :show %>
+  </div>
+  <div class="field">
+    <%= f.label :topic %><br />
+    <%= f.number_field :topic %>
+  </div>
+  <div class="field">
+    <%= f.label :network %><br />
+    <%= f.number_field :network %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :start %><br />
+    <%= f.time_select :start %>
+  </div>
+  <div class="field">
+    <%= f.label :end %><br />
+    <%= f.time_select :end %>
+  </div>
+  <div class="field">
+    <%= f.label :host %><br />
+    <%= f.number_field :host %>
+  </div>
+  <div class="field">
+    <%= f.label :guest %><br />
+    <%= f.number_field :guest %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  show: 1
+  topic: 1
+  network: 1
+  date: 2013-08-01
+  start: 2013-08-01 11:53:37
+  end: 2013-08-01 11:53:37
+  host: 1
+  guest: 1
+
+two:
+  show: 1
+  topic: 1
+  network: 1
+  date: 2013-08-01
+  start: 2013-08-01 11:53:37
+  end: 2013-08-01 11:53:37
+  host: 1
+  guest: 1

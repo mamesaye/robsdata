@@ -1,0 +1,23 @@
+<h1>Listing tv_types</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tv_types.each do |tv_type| %>
+  <tr>
+    <td><%= tv_type.name %></td>
+    <td><%= link_to 'Show', tv_type %></td>
+    <td><%= link_to 'Edit', edit_tv_type_path(tv_type) %></td>
+    <td><%= link_to 'Destroy', tv_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tv type', new_tv_type_path %>

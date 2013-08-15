@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Show:</b>
+  <%= @appearance.show %>
+</p>
+
+<p>
+  <b>Topic:</b>
+  <%= @appearance.topic %>
+</p>
+
+<p>
+  <b>Network:</b>
+  <%= @appearance.network %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @appearance.date %>
+</p>
+
+<p>
+  <b>Start:</b>
+  <%= @appearance.start %>
+</p>
+
+<p>
+  <b>End:</b>
+  <%= @appearance.end %>
+</p>
+
+<p>
+  <b>Host:</b>
+  <%= @appearance.host %>
+</p>
+
+<p>
+  <b>Guest:</b>
+  <%= @appearance.guest %>
+</p>
+
+
+<%= link_to 'Edit', edit_appearance_path(@appearance) %> |
+<%= link_to 'Back', appearances_path %>

@@ -1,0 +1,16 @@
+class CreateAppearances < ActiveRecord::Migration
+  def change
+    create_table :appearances do |t|
+      t.integer :show
+      t.integer :topic
+      t.integer :network
+      t.date :date
+      t.time :start
+      t.time :end
+      t.integer :host
+      t.integer :guest
+
+      t.timestamps
+    end
+  end
+end

@@ -1,6 +1,6 @@
 Robsdata::Application.routes.draw do
 
-  root to: "homes#index"   # get "/" => "homes#index" 
+  root :to => 'data#index'
 
   resources :sources
 

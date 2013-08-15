@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @program.name %>
+</p>
+
+<p>
+  <b>Show:</b>
+  <%= @program.show %>
+</p>
+
+<p>
+  <b>Start time:</b>
+  <%= @program.start_time %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @program.date %>
+</p>
+
+
+<%= link_to 'Edit', edit_program_path(@program) %> |
+<%= link_to 'Back', programs_path %>

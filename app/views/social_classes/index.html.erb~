@@ -1,0 +1,23 @@
+<h1>Listing social_classes</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @social_classes.each do |social_class| %>
+  <tr>
+    <td><%= social_class.name %></td>
+    <td><%= link_to 'Show', social_class %></td>
+    <td><%= link_to 'Edit', edit_social_class_path(social_class) %></td>
+    <td><%= link_to 'Destroy', social_class, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Social class', new_social_class_path %>
